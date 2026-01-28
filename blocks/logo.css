@@ -1,0 +1,21 @@
+.logo {
+  width: 255px;
+  height: 69px;
+  margin: 34px auto 0;
+  text-align: center;
+}
+
+.logo__icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.logo__text {
+  margin: 0;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}

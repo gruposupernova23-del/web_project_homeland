@@ -1,0 +1,31 @@
+.footer {
+  margin: 92px 0 0;
+}
+
+.footer__copyright {
+  width: 194px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 92px 0 24px;
+  }
+
+  .footer__copyright {
+    width: 194px; /* Figma 768: 194 */
+    margin: 0 auto; /* lo centra */
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px; /* Figma: 14 */
+    line-height: 16px; /* Figma: 16 */
+    color: #ffffff;
+    text-align: center; /* centrado visual */
+  }
+}

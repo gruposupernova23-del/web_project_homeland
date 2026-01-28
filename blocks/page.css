@@ -4,3 +4,33 @@
   background-color: #2a2c2f;
   color: #ffffff;
 }
+
+.page__content {
+  width: 984px;
+  margin: 0 auto;
+  padding-top: 34px;
+}
+
+@media screen and (max-width: 1024px) {
+  .page__content {
+    max-width: 768px;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .page__content {
+    max-width: 320px;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,68 @@
+.lead {
+  width: 984px;
+  margin: 91.06px auto 0;
+  text-align: center;
+}
+
+.lead__title {
+  width: 720px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+}
+
+.lead__subtitle {
+  width: 720px;
+  margin: 32px auto 0;
+  color: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.lead__image {
+  width: 984px;
+  height: 615px;
+  margin: 64px auto 0;
+  display: block;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .lead {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .lead__title {
+    width: 100%;
+    max-width: 530px;
+    margin: 0 auto;
+    font-size: 75px;
+    line-height: 79px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .lead__subtitle {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .lead__image {
+    width: 100%;
+    max-width: 768px; /* Figma 768 */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
