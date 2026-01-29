@@ -24,13 +24,10 @@
 }
 
 @media screen and (max-width: 544px) {
+  .page,
   .page__content {
-    max-width: 320px;
-    padding: 0 16px;
-    box-sizing: border-box;
-  }
-
-  .content {
-    max-width: 100%;
+    width: 100%;
+    max-width: none;
+    margin: 0;
   }
 }

@@ -29,3 +29,16 @@
     text-align: center; /* centrado visual */
   }
 }
+
+@media screen and (max-width: 544px) {
+  .footer {
+    width: 194px; /* Figma */
+    margin: 0 auto; /* lo centra: te da esos 63px a cada lado */
+    padding-bottom: 24px; /* separación inferior (ajustable) */
+  }
+
+  .footer__copyright {
+    width: 194px;
+    margin: 0 auto; /* esto reemplaza el left: 63px (centrado perfecto) */
+  }
+}
