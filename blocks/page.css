@@ -6,28 +6,38 @@
 }
 
 .page__content {
-  width: 984px;
+  width: 100%;
+  max-width: 984px;
   margin: 0 auto;
   padding-top: 34px;
+  box-sizing: border-box;
 }
 
+/* Tablet (luego lo afinamos) */
 @media screen and (max-width: 1024px) {
   .page__content {
+    width: 100%;
     max-width: 768px;
+    margin: 0 auto;
     padding: 0 24px;
+    padding-top: 34px;
     box-sizing: border-box;
-  }
-
-  .content {
-    max-width: 100%;
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 544px) {
-  .page,
   .page__content {
     width: 100%;
     max-width: none;
     margin: 0;
+    padding: 0 16px;
+    padding-top: 34px;
+    box-sizing: border-box;
+  }
+
+  .content {
+    width: 100%;
+    max-width: none;
   }
 }

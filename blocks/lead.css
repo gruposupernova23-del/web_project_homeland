@@ -68,35 +68,31 @@
 }
 
 @media screen and (max-width: 544px) {
-  /* LEAD (320) */
   .lead {
-    max-width: 288px; /* 320 - 16 - 16 */
-    margin: 50px auto 0; /* gap desde el logo (72 -> 122) */
+    width: 100%;
+    margin: 50px 0 0;
     text-align: center;
   }
 
   .lead__title {
-    max-width: 228px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     font-size: 40px;
     line-height: 44px;
-    font-weight: 900;
   }
 
   .lead__subtitle {
-    max-width: 288px;
-    margin: 16px auto 40px; /* aprox según tus posiciones */
+    width: 100%;
+    margin: 16px 0 40px;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 400;
   }
 
-  /* Imagen full-bleed (320px) aunque el contenido tenga padding 16 */
   .lead__image {
-    width: 320px;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    margin: 0;
     display: block;
-    margin-left: -16px;
     object-fit: cover;
   }
 }

@@ -82,41 +82,48 @@
     font-weight: 400;
   }
 }
-
 @media screen and (max-width: 544px) {
-  /* ========== INTRO (BASE / MOBILE) ========== */
-
   .intro {
     width: 100%;
-    padding: 64px 16px;
+    margin: 64px 0 0;
+    padding: 0;
     box-sizing: border-box;
   }
 
   .intro__title {
-    margin: 0 0 32px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
     font-size: 32px;
-    line-height: 1.1;
+    line-height: 35px;
     font-weight: 900;
   }
 
   .intro__text_type_quote {
-    margin: 0 0 8px;
+    width: 100%;
+    max-width: none;
+    margin: 40px 0 0;
     font-size: 24px;
-    line-height: 1.25;
+    line-height: 30px;
     font-weight: 400;
   }
 
   .intro__quote {
-    margin: 0 0 24px;
+    width: 100%;
+    max-width: none;
+    margin: 10px 0 0;
     font-size: 24px;
-    line-height: 1.4;
+    line-height: 34px;
+    font-weight: 400;
     text-align: right;
   }
 
   .intro__text_type_main {
-    margin: 0;
+    width: 100%;
+    max-width: none;
+    margin: 32px 0 0;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.63;
     font-weight: 400;
   }
 }
