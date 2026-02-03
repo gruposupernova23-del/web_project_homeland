@@ -1,44 +1,42 @@
-.page {
-  min-height: 100vh;
+html,
+body {
   margin: 0;
-  font-family: "Inter", Arial, sans-serif;
-  background-color: #2a2c2f;
-  color: #ffffff;
+  padding: 0;
 }
 
-.page__content {
+body {
+  background-color: #2a2c2f; /* el fondo real de toda la pantalla */
+  color: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.page {
   width: 100%;
   max-width: 984px;
   margin: 0 auto;
   padding-top: 34px;
   box-sizing: border-box;
+
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #2a2c2f;
+  color: #ffffff;
 }
 
-/* Tablet (luego lo afinamos) */
+/* Tablet */
 @media screen and (max-width: 1024px) {
-  .page__content {
-    width: 100%;
+  .page {
     max-width: 768px;
-    margin: 0 auto;
     padding: 0 24px;
     padding-top: 34px;
-    box-sizing: border-box;
   }
 }
 
 /* Mobile */
 @media screen and (max-width: 544px) {
-  .page__content {
-    width: 100%;
+  .page {
     max-width: none;
     margin: 0;
     padding: 0 16px;
     padding-top: 34px;
-    box-sizing: border-box;
-  }
-
-  .content {
-    width: 100%;
-    max-width: none;
   }
 }
