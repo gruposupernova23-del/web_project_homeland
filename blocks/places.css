@@ -1,3 +1,115 @@
 .places {
-  outline: 1px solid blue; /* temporal */
+  margin-top: 92px;
+  padding: 92px 0 0;
+  grid-template-columns: 460px 484px;
+}
+
+.places__list {
+  display: grid;
+  gap: 80px;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-areas:
+    "title website"
+    "image paragraphs"
+    "button paragraphs";
+  gap: 48px 40px;
+  align-items: start;
+}
+
+.place__title {
+  grid-area: title;
+  margin: 0;
+  max-width: 460px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  letter-spacing: 0;
+}
+
+.place__website {
+  grid-area: website;
+  align-self: end;
+}
+
+.place__image {
+  grid-area: image;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.place__paragraphs {
+  grid-area: paragraphs;
+  max-width: 484px;
+}
+
+.place__paragraph {
+  margin: 0 0 26px;
+  font-size: 18px;
+  line-height: 1.63;
+}
+.place__paragraph:last-child {
+  margin-bottom: 0;
+}
+.place__button {
+  width: 289px;
+  height: 48px;
+  box-sizing: border-box;
+
+  padding: 13px 20px;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 100%);
+  color: #fff;
+  text-decoration: none;
+
+  /* evita que grid lo estire raro */
+  justify-self: start;
+  align-self: start;
+}
+
+.place__url-heading {
+  margin: 0 0 8px;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.place__link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.place__link:hover {
+  opacity: 0.8;
+}
+
+.place__button:hover {
+  opacity: 0.8;
+}
+
+.place__paragraphs {
+  margin: 0;
+}
+
+.place__paragraph {
+  margin: 0 0 26px;
+  font-size: 18px;
+  line-height: 1.63;
+}
+
+.place__paragraph:last-child {
+  margin-bottom: 0;
 }
