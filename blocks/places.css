@@ -1,6 +1,6 @@
 .places {
   margin-top: 92px;
-  padding: 92px 0 0;
+
   grid-template-columns: 460px 484px;
 }
 
@@ -112,4 +112,91 @@
 
 .place__paragraph:last-child {
   margin-bottom: 0;
+}
+
+/* TABLET: <= 1024px (layout 768) */
+@media screen and (max-width: 1024px) {
+  .places {
+    padding: 88px 24px 0;
+  }
+
+  .places__list {
+    gap: 72px;
+  }
+
+  .place {
+    grid-template-columns: 340px 1fr;
+    gap: 48px 28px;
+  }
+
+  .place__title {
+    max-width: 340px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .place__paragraphs {
+    max-width: 352px;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+
+  .place__button {
+    width: 289px;
+    height: 48px;
+  }
+}
+
+/* MOBILE: <= 544px (layout 320) */
+@media screen and (max-width: 544px) {
+  .places {
+    padding: 64px 16px 0;
+  }
+
+  .places__list {
+    gap: 50px;
+  }
+
+  .place {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "paragraphs"
+      "button";
+    gap: 32px;
+  }
+
+  .place__title {
+    max-width: 100%;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .place__website {
+    align-self: start;
+  }
+
+  .place__image {
+    width: 100%;
+  }
+
+  .place__paragraphs {
+    max-width: 100%;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+
+  .place__button {
+    width: 100%;
+    max-width: 288px;
+    justify-self: start;
+  }
 }
