@@ -1,69 +1,27 @@
 .logo {
-  width: 255px;
-  height: 69px;
-  margin: 34px auto 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
 
-.logo__icon {
-  width: 32px;
-  height: 32px;
+.logo__image {
   display: block;
-  margin: 0 auto 8px;
+  width: 318px; /* desktop (si tu figma desktop es 318) */
+  height: auto;
 }
 
-.logo__text {
-  margin: 0;
-  font-weight: 900;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-}
-
+/* TABLET (768) */
 @media screen and (max-width: 1024px) {
-  .logo {
-    width: 254px;
-    height: 66px;
-    margin: 30px auto 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 22px; /* 30 + 14 + 22 = 66 (cuadra perfecto) */
-  }
-
-  .logo__text {
-    width: 254.84px;
-    height: 14.09px;
-    margin: 0;
-  }
-
   .logo__image {
-    width: 32px;
-    height: 30.17px;
-    display: block;
+    width: 254px;
+    height: 66px; /* si te deforma, cámbialo a height:auto */
   }
 }
 
+/* MOBILE (320) */
 @media screen and (max-width: 544px) {
-  .logo {
-    width: 188px;
-    height: 52px;
-    margin: 20px auto 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .logo__text {
-    max-width: 188px;
-    margin: 0;
-    font-size: 10px;
-    line-height: 11px;
-    text-align: center;
-  }
-
   .logo__image {
-    width: 24px;
-    height: 24px;
+    width: 188px;
+    height: 52px; /* si te deforma, cámbialo a height:auto */
   }
 }
